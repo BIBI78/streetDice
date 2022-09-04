@@ -4,7 +4,7 @@
       }
       
       body {
-        font-family: basic-sans, sans-serif;
+        /* font-family: basic-sans, sans-serif;
         min-height: 100vh;
         display: flex;
         justify-content: center;
@@ -12,10 +12,11 @@
         font-size: 1.125em;
         line-height: 1.6;
         color: #333;
-        background: #ddd;
-        background-size: 400%;
+        background: #ddd; */
+
+        /* background-size: 400%;
         background-image: var(--gradient);
-        animation: bg-animation 5s infinite alternate;
+        animation: bg-animation 5s infinite alternate; */
         
       }
       
@@ -44,7 +45,7 @@
         background-image: var(--gradient);
         -webkit-background-clip: text;
         background-size: 400%;
-        animation: bg-animation 1s infinite alternate;
+        animation: bg-animation .5s infinite alternate;
         
       
       }
