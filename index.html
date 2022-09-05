@@ -11,56 +11,22 @@
 </head>
 <body>
    
-    <!-- <style>
-        .box {
-            color: red;
-        }
-    </style> -->
+   
 <div class = "box">
 free ysl
 </div>
 
 <div class ="die">
 
-    <img src ="assets/images/d1.png" id="dieImage">
+    <img src ="assets/images/d1.png" class="dieImage">
+    <img src ="assets/images/d2.png" class="dieImage">
+    <img src ="assets/images/d3.png" class="dieImage">
+
 </div>
 
 
 
 <button onclick ="rollDie()">roll em</button>
-
-
-
-
-
-
-<script>
-      function rollDie(){
-        const firstNumber = Math.floor(Math.random()*6) + 1;
-        const firstDie =  "assets/images/d" + firstNumber + ".png";
-        // document.getElementById('img')[0].setAttribute("src",firstDie); 
-        document.querySelector('img').setAttribute("src",firstDie); 
-
-
-
-
-        
-      }
-
-    // function changeColor(){
-    //     document.querySelector('.box').style.color = 'blue'
-    // }
-</script>
-   
-
-
-
-
-        
-
-
-     
-
 
     <script src="assets/js/script.js"></script>
 </body>

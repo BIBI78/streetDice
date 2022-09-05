@@ -65,3 +65,27 @@ console.log("slatt")
 
 // }
 
+
+function rollDie(){
+    const firstNumber = Math.floor(Math.random()*6) + 1;
+    const secondNumber = Math.floor(Math.random()*6) + 1;
+    const thirdNumber = Math.floor(Math.random()*6) + 1;
+
+    const firstDie =  "assets/images/d" + firstNumber + ".png";
+    const secondDie =  "assets/images/d" + secondNumber + ".png";
+    const thirdDie =  "assets/images/d" + thirdNumber + ".png";
+    // document.getElementById('img')[0].setAttribute("src",firstDie); 
+    document.getElementsByTagName('img')[1].setAttribute("src",secondDie); 
+    document.getElementsByTagName('img')[2].setAttribute("src",thirdDie); 
+
+    document.querySelector('img').setAttribute("src",firstDie); 
+    // document.querySelector('img').setAttribute("src",secondDie); 
+    // document.querySelector('img').setAttribute("src",thirdDie); 
+    
+
+
+
+    
+  }
+
+
