@@ -10,61 +10,55 @@
     <title>Street Dice</title>
 </head>
 <body>
-    <div class="content">
-    <h1 class = "title">street dice</h1>
-    </div>
+   
+    <!-- <style>
+        .box {
+            color: red;
+        }
+    </style> -->
+<div class = "box">
+free ysl
+</div>
 
-  <div class = "game-area">
+<div class ="die">
 
-
-        <h2> maybe the die go here</h2>
-        <div class ="die">
-
-            <img class="dieImage">
-            <img class="dieImage"> 
-            <img class="dieImage">  
-            <br>
-            <img class="dieImage">
-            <img class="dieImage"> 
-            <img class="dieImage">  
+    <img src ="assets/images/d1.png" id="dieImage">
+</div>
 
 
 
-
-        </div>
-
-       
-
-
-        <div class = "controls-area">
-
-            <button data-type ="roll" onclick="rollDie"> roll
-                <i class="fa-solid fa-dice"></i>
-        </button>
+<button onclick ="rollDie()">roll em</button>
 
 
 
 
 
-            <!-- <button data-type = "roll" class  = " btn roll2"> roll 
-            <i class="fa-solid fa-dice"></i>
-        </button>
-            <button data-type ="re-roll" class=  " btn roll-again"> re roll
-            <i class="fa-solid fa-rotate-right"></i>
-        </button>
-            <button class = " btn clear"> clear 
-            <i class="fa-solid fa-delete-right"></i>
-        </button> -->
+
+<script>
+      function rollDie(){
+        const firstNumber = Math.floor(Math.random()*6) + 1;
+        const firstDie =  "assets/images/d" + firstNumber + ".png";
+        // document.getElementById('img')[0].setAttribute("src",firstDie); 
+        document.querySelector('img').setAttribute("src",firstDie); 
+
+
+
+
+        
+      }
+
+    // function changeColor(){
+    //     document.querySelector('.box').style.color = 'blue'
+    // }
+</script>
+   
+
+
+
+
         
 
-        </div>
 
-        <div class = "rolls">
-            <p class = "outcome-one"> roll1: <span id ="score-one">0</span></p>
-            <p class = "outcome-two"> roll2: <span id ="score-two">0</span></p>
-
-        </div>
-    </div>
      
 
 
