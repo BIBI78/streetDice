@@ -87,8 +87,10 @@ function rollDie(){
 
   }
 
-  function sound(){
-    var snd = new Audio('sound_file_name.mp3')//wav is also supported
-    snd.play()//plays the sound
-}
+ 
+    function play() {
+      var audio = new Audio('https://www.fesliyanstudios.com/play-mp3/387');
+      audio.play();
+    }
+
 
