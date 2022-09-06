@@ -1,5 +1,19 @@
 console.log("slatt")
 
+
+function setDice() {
+  const firstNumber = Math.floor(Math.random()*6) + 1;
+    const secondNumber = Math.floor(Math.random()*6) + 1;
+    const thirdNumber = Math.floor(Math.random()*6) + 1;
+  const playerRoll = [firstNumber ,  secondNumber, thirdNumber];
+  console.log(playerRoll)
+  
+}
+
+
+
+
+
 function rollDie(){
     const firstNumber = Math.floor(Math.random()*6) + 1;
     const secondNumber = Math.floor(Math.random()*6) + 1;
@@ -80,17 +94,10 @@ function rollDie(){
 
   }
 
-
-
-  function compareRoll(){
-
-
-  }
-
  
     function play() {
       var audio = new Audio('https://www.fesliyanstudios.com/play-mp3/387');
       audio.play();
     }
 
-
+ 
