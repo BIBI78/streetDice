@@ -1,6 +1,27 @@
 console.log("slatt")
 
 
+
+function spinDie(){
+
+  const firstNumber = Math.floor(Math.random()*6) + 1;
+  const firstDie =  "assets/images/d" + firstNumber + ".png";
+  document.getElementsByTagName('img')[0].setAttribute("src",firstDie); 
+  document.getElementsByClassName("rotate");
+ 
+
+
+}
+
+
+
+
+
+
+
+
+
+
 function setDice() {
   const firstNumber = Math.floor(Math.random()*6) + 1;
     const secondNumber = Math.floor(Math.random()*6) + 1;
