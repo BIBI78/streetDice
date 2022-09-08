@@ -7,29 +7,41 @@
   //    document.getElementById('img').className = 'spinImg';
    
   // }
+   // document.getElementById("spin").addEventListener("click", spin);
 
-  // function spin(){
-  //   document.getElementById('img').className = 'spinImg'
-  //    }
+   const snake = document.getElementById('img');
+
+   function removeSpinClass() {
+       snake.classList.remove('spinImg');
+       
+   }
+   snake.addEventListener('animationend', removeSpinClass)
    
-  // document.getElementById("spin").addEventListener("click", spin);
-
+  function spin(){
+    document.getElementById('img').className = 'spinImg'
+    
+     }
+   
+ 
  
 
-  document.getElementById("myBtn").addEventListener("click", displayDate);
-
-  function displayDate() {
-    document.getElementById("demo").innerHTML = Date();
-  }
-
-
-
-  document.getElementById("mySpin").addEventListener("click", spin);
-
-  function spin(){
-   document.getElementById('img').className = 'spinImg';
-   
-   
   
- }
 
+
+
+
+
+
+
+
+
+
+
+function rotateImage() {
+  var image = document.getElementById("image");
+  if (image.style.webkitAnimationPlayState == "running") {
+    image.style.webkitAnimationPlayState = "paused";
+  } else {
+    image.style.webkitAnimationPlayState = "running";
+  }
+}
