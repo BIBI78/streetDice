@@ -10,41 +10,61 @@
     <title>Street Dice</title>
 </head>
 <body>
+    <div class="content">
+        <h1 class = "title">FREE YSL</h1>
+        </div>
 
-    <img src ="assets/images/snake.webp" class="rotate" width="100" height="100" />
+        <!-- <div>
+            <img id ="img1" src ="assets/images/snake.webp" class="rotate" >
+         </div>
+<div>
+       <img id ="img2" src ="assets/images/snake.webp" class="rotate dieImage" >
+    </div>
+    -->
 
-    <img src ="assets/images/snake.webp"  class="rotate" width="100" height="100" />
-    
-    <img src ="assets/images/snake.webp"  class="rotate" width="100" height="100" />
-   
+<div class ="die">
 
-    <img id ="image" src ="assets/images/snake.webp" width="328" height="328" >
-    
-    <button onclick="rotateImage()">toogle rotation</button>
+    <img src ="assets/images/d1.png" class="dieImage">
+    <img src ="assets/images/d2.png" class="dieImage">
+    <img src ="assets/images/d3.png" class="dieImage">
+
+</div>
+
+<div class ="die">
+
+    <img src ="assets/images/d4.png" class="dieImage">
+    <img src ="assets/images/d5.png" class="dieImage">
+    <img src ="assets/images/d6.png" class="dieImage">
+
+</div>
 
 
-
-
+<div>
     <img id ="img" src ="assets/images/snake.webp" width="328" height="328" >
     <input name="" type="button" onclick="spin()" value="SPIN dammit" id = "spin" >  
-
-
-
-
-
-<!-- 
- <input name="" type="button" onclick="spin()" value="SLATT" id = "spin" >  -->
-
-<!-- <img id ="img" src ="assets/images/snake.webp" width="328" height="328" class="snake" > -->
-
-
     
+ </div>
 
 
 
-        
 
-        
+
+
+
+
+
+<button onclick ="rollDie(); play()">roll em</button>
+
+<button onclick ="rollDieTwo(); play()">bet em up</button>
+
+<button onclick ="rollBoth(); play()">lets go</button>
+
+<button onclick ="setDice()">set</button>
+
+
+
+
+
 
     <script src="assets/js/script.js"></script>
 </body>

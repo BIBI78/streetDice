@@ -1,58 +1,98 @@
+/* :root {
+        --gradient: linear-gradient(90deg, #ee6352, purple, #ee6352);
+      
+      } */
+      
 
+    :root {
+        --gradient: linear-gradient(90deg,
+        #39FF14,
+        #88FF0C,
+        #B0FF08,
+        #D7FF04,
+        #FFFF00);
+      
+      }
+      
+      body {
+        /* font-family: basic-sans, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.125em;
+        line-height: 1.6;
+        color: #333;
+        background: #ddd; */
 
-  .spinImg{
-    margin: 20px;
+        /* background-size: 400%;
+        background-image: var(--gradient);
+        animation: bg-animation 5s infinite alternate; */
+        
+      }
+      
+      @keyframes bg-animation {
+        0% {background-position: left;}
+        100% {background-position: right;}
+      }
+      /* change this */
+      .dieImage{
+        height: 3rem;
+        width: 6%;
+
+      }
+
+      .rotate{
+        height: 3rem;
+        width: 6%;
+      }
+      .content {
+        background: white;
+        width: 70vw;
+        padding: 3em;
+        box-shadow: 0 0 3em rgba(0,0,0,.15);
+      }
+      
+      .title {
+        margin: 0 0 .5em;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 6rem;
+        color: rgba(0,0,0,.15);
+        line-height: .8;
+        margin: 0;
+        
+        background-image: var(--gradient);
+        -webkit-background-clip: text;
+        background-size: 400%;
+        animation: bg-animation .25s infinite alternate;
+        
+      
+      }
+
+      .spinImg{
+        margin: 20px;
+        
+        -webkit-animation-name: spin;
+        -webkit-animation-duration: .2s;
+        -webkit-animation-iteration-count: 7;
+        -webkit-animation-timing-function: linear;
+      
+        
     
-    -webkit-animation-name: spin;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: 2;
-    -webkit-animation-timing-function: linear;
-  
+      }
+
+      @-ms-keyframes spin {
+        from { -ms-transform: rotate(0deg); }
+        to { -ms-transform: rotate(360deg); }
+    }
+    @-moz-keyframes spin {
+        from { -moz-transform: rotate(0deg); }
+        to { -moz-transform: rotate(360deg); }
+    }
+    @-webkit-keyframes spin {
+        from { -webkit-transform: rotate(0deg); }
+        to { -webkit-transform: rotate(360deg); }
+    }
     
-
-  }
-
-
-  
-
-  @-ms-keyframes spin {
-    from { -ms-transform: rotate(0deg); }
-    to { -ms-transform: rotate(360deg); }
-}
-@-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-}
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-}
-
-
-
-
-
-#image {
-  animation: rotation 1s linear 0s infinite;
-  animation-play-state: paused;
-}
-
-@keyframes rotation {
-  to {
-    transform: rotate(360deg)
-  }
-}
-
-
-.rotate {
-  animation: rotation 8s infinite linear;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
