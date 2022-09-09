@@ -1,21 +1,28 @@
 
-
-
-
-   const snake = document.getElementById('img');
-
-   function removeSpinClass() {
-       snake.classList.remove('spinImg');
-       
-   }
-   snake.addEventListener('animationend', removeSpinClass)
    
   function spin(){
     document.getElementById('img').className = 'spinImg'
+    document.getElementById('img1').className = 'spinImg'
+    document.getElementById('img2').className = 'spinImg'
+   
     
      }
-   
 
+     const snake = document.getElementById('img');
+     const snake1 = document.getElementById('img1');
+     const snake2 = document.getElementById('img2');
+
+     function removeSpinClass() {
+         snake.classList.remove('spinImg');
+         snake1.classList.remove('spinImg');
+         snake2.classList.remove('spinImg');
+      
+         
+     }
+     snake.addEventListener('animationend', removeSpinClass)
+     
+   
+     
 
 
 function setDice() {
