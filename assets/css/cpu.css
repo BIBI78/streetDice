@@ -1,0 +1,285 @@
+:root {
+    --gradient: linear-gradient(90deg,
+    #39FF14,
+    #88FF0C,
+    #B0FF08,
+    #D7FF04,
+    #FFFF00);
+  
+  }
+  
+  
+  body {
+    color: white;
+    background-color: black;
+    font-family: "Press Start 2P", monospace;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  
+  
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  
+  h1 {
+    margin: 0;
+  }
+
+
+  #win-header{
+    color: rgb(192, 192, 192);
+    text-shadow: 2px 2px 0 rgb(192, 11, 126);
+    margin: auto;
+    font-family: "Permanent Marker", monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40vh;
+    font-size: 4rem;
+    line-height: 0.75;
+    word-break: break-word;
+    max-width: 500px;
+    text-transform: None;
+  
+  }
+  
+  
+
+  @keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
+  }
+  .title {
+    margin: auto;
+ 
+
+/* 
+  font-family: "Rock Salt", monospace;  */
+
+    font-family:  monospace;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40vh;
+    font-size: 2rem;
+    line-height: 0.75;
+    word-break: break-word;
+    max-width: 500px;
+  
+  
+  }
+  
+  
+  .title h1 {
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; 
+  
+   background-image: var(--gradient); 
+   -webkit-background-clip: text;
+   background-size: 400%;
+   animation: bg-animation .25s infinite alternate;
+  }
+  
+  
+  
+  .slatt {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+  
+    background-image: linear-gradient(#ff14bc, #fff70c,  #084eff); 
+    -webkit-background-clip: text;
+    background-size: 100%;
+    /* animation: bg-animation .25s infinite alternate; */
+  }
+  
+
+  .title-top {
+    transform: skew(-10deg) rotate(-10deg) translateX(-2rem);
+  }
+  .title-bottom {
+    transform: skew(-10deg) rotate(-10deg) translateX(1rem);
+  }
+  
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    margin: auto;
+  }
+  
+  
+  .options a {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .snake{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15vh;
+    margin: auto; 
+    margin-bottom: 1%;
+  }
+
+  .die{
+    /* height :30%;
+    width : 6%; */
+   
+    margin-bottom: 5%;
+
+
+  }
+  
+  
+  .credit{
+    margin-top: 10px;
+    pointer-events: none;
+  
+    color:  rgb(232, 16, 240);
+    text-shadow: 2px 2px 0  rgb(116, 122, 117)
+  
+   
+  
+  }
+  
+  .green-colorway {
+    color:  rgb(44, 226, 24);
+    text-shadow: 2px 2px 0  rgb(116, 122, 117)
+  }
+  
+  .big-font {
+    font-size: 6rem;
+  }
+
+
+
+  .button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+  }
+  
+  
+  /* edit this  */
+  @media (min-width: 400px) {
+    body {
+      font-size: 1.2rem;
+    }
+  
+    .big-font {
+      font-size: 7rem;
+    }
+  }
+  /* change the px */
+  @media (min-width: 786px) {
+    .big-font {
+      font-size: 9rem;
+    }
+  
+    .title {
+      font-size: 3rem;
+      height: 50vh;
+    }
+  
+    .options {
+      height: 40vh;
+    }
+  
+    .title-top {
+      transform: skew(-10deg) rotate(-10deg) translateX(-2rem);
+    }
+  
+    .title-bottom {
+      transform: skew(-10deg) rotate(-10deg) translateX(3rem);
+    }
+  }
+  
+  /* change  */
+  @media (min-width: 900px) {
+    .credit {
+      position: absolute;
+      right: 50px;
+      margin-top: 0;
+    }
+  }
+  
+  
+  /*found on google  */
+  .load {
+    animation: load 800ms 500ms backwards;
+  }
+  
+  @keyframes load {
+    0% {
+      filter: blur(2px) hue-rotate(-150deg);
+    }
+  }
+  
+  ::selection {
+    background: #b4fdff;
+  }
+  
+  ::-moz-selection {
+    background: #da0a0a;
+  }
+  
+  /* new style sheet bits */
+  .dieImage{
+  height: 3rem;
+  width: 6%;
+  
+  }
+  
+  
+  .spinImg{
+    margin: 20px;
+    
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: .2s;
+    -webkit-animation-iteration-count: 5;
+    -webkit-animation-timing-function: linear;
+  
+    
+  
+  }
+  
+  @-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+  }
+  @-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+  }
+  
+  #spinButton{
+    background-color: black;
+    text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+  }
+
+  .button{
+
+    background-color: black;
+    text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 30px;
+
+  }
